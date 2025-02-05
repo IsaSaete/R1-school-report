@@ -1,46 +1,79 @@
-const appHeader = "INFORME DE LA ESCUELA";
+const appHeader = "INFORME DE LA ESCUELA\n";
 
-console.log(appHeader + " \n\n   Cursos:");
+//Datos de los cursos
+const courseName1 = "Gestión sostenible de recursos";
+const courseName2 = "Marketing digital";
+const courseName3 = "Desarrollo de videojuegos";
 
-const courseNames = [
-  "Gestión sostenible de recursos",
-  "Marketing digital",
-  "Desarrollo de videojuegos",
-];
-const courseLevels = ["nivel básico", "nivel intermedio", "nivel avanzado"];
-const courseDurations = ["12 horas", "80 horas", "40 horas"];
+const courseLevel1 = "nivel básico";
+const courseLevel2 = "nivel intermedio";
+const courseLevel3 = "nivel avanzado";
 
-for (let index = 0; index < courseNames.length; index++) {
-  const courseName = courseNames[index];
-  const courseLevel = courseLevels[index];
-  const courseDuration = courseDurations[index];
-  const bulletpoint = "  - ";
+const courseDuration1 = "12 horas";
+const courseDuration2 = "40 horas";
+const courseDuration3 = "80 horas";
 
-  console.log(
-    bulletpoint + courseName + " (" + courseLevel + ", " + courseDuration + ")"
-  );
-}
+const course1 =
+  "  - " +
+  courseName1 +
+  " (" +
+  courseLevel1 +
+  ", " +
+  courseDuration1 +
+  ")" +
+  "\n";
+const course2 =
+  "  - " +
+  courseName2 +
+  " (" +
+  courseLevel2 +
+  ", " +
+  courseDuration2 +
+  ")" +
+  "\n";
+const course3 =
+  "  - " +
+  courseName3 +
+  " (" +
+  courseLevel3 +
+  ", " +
+  courseDuration3 +
+  ")" +
+  "\n";
 
-console.log("\n  Alumnos:");
+const coursesList = "\n  Cursos:" + "\n" + course1 + course2 + course3;
 
-const studentsNames = ["María", "Cristian"];
-const studentsLastNames = ["Areces", "Sánchez"];
-const studentsAges = [24, 31];
+//Datos de los alumnos
+const studentName1 = "María";
+const studentName2 = "Cristian";
 
-for (let index = 0; index < studentsNames.length; index++) {
-  const student = studentsNames[index] + " " + studentsLastNames[index];
-  const ages = studentsAges[index];
-  const bulletpoint = "  - ";
+const studentLastName1 = "Areces";
+const studentLastName2 = "Sánchez";
 
-  console.log(bulletpoint + student + ", " + ages + " años");
-}
+const studentAge1 = 24;
+const studentAge2 = 32;
 
-function getAverageAge() {
-  let sum = 0;
-  for (let index = 0; index < studentsAges.length; index++) {
-    sum = sum + studentsAges[index];
-  }
-  return sum / studentsAges.length;
-}
+const student1 =
+  "  - " +
+  studentName1 +
+  " " +
+  studentLastName1 +
+  ", " +
+  studentAge1 +
+  " años\n";
+const student2 =
+  "  - " +
+  studentName2 +
+  " " +
+  studentLastName2 +
+  ", " +
+  studentAge2 +
+  " años\n";
 
-console.log("\n  Edad media de los alumnos: " + getAverageAge() + " años");
+const studentsList = "\n  Alumnos:" + "\n" + student1 + student2;
+
+//Calcular media de edad
+const averageStudentsAges =
+  "\n  Edad media de los alumnos: " + (studentAge1 + studentAge2) / 2 + " años";
+
+console.log(appHeader + coursesList + studentsList + averageStudentsAges);
