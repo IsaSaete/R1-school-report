@@ -7,9 +7,7 @@ const courseNames = [
   "Marketing digital",
   "Desarrollo de videojuegos",
 ];
-
 const courseLevels = ["nivel básico", "nivel intermedio", "nivel avanzado"];
-
 const courseDurations = ["12 horas", "80 horas", "40 horas"];
 
 for (let index = 0; index < courseNames.length; index++) {
