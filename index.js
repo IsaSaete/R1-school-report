@@ -1,6 +1,6 @@
-const appHeader = " INFORME DE LA ESCUELA";
+const appHeader = "INFORME DE LA ESCUELA";
 
-console.log(appHeader + " \n\n  Cursos:");
+console.log(appHeader + " \n\n   Cursos:");
 
 const courseNames = [
   "Gestión sostenible de recursos",
@@ -16,9 +16,10 @@ for (let index = 0; index < courseNames.length; index++) {
   const courseName = courseNames[index];
   const courseLevel = courseLevels[index];
   const courseDuration = courseDurations[index];
+  const bulletpoint = "  - ";
 
   console.log(
-    "  - " + courseName + " (" + courseLevel + ", " + courseDuration + ")"
+    bulletpoint + courseName + " (" + courseLevel + ", " + courseDuration + ")"
   );
 }
 
@@ -31,14 +32,15 @@ const studentsAges = [24, 31];
 for (let index = 0; index < studentsNames.length; index++) {
   const student = studentsNames[index] + " " + studentsLastNames[index];
   const ages = studentsAges[index];
+  const bulletpoint = "  - ";
 
-  console.log("  - " + student + ", " + ages + " años");
+  console.log(bulletpoint + student + ", " + ages + " años");
 }
 
 function getAverageAge() {
   let sum = 0;
-  for (let i = 0; i < studentsAges.length; i++) {
-    sum = sum + studentsAges[i];
+  for (let index = 0; index < studentsAges.length; index++) {
+    sum = sum + studentsAges[index];
   }
   return sum / studentsAges.length;
 }
