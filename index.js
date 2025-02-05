@@ -1,6 +1,6 @@
-const titlle = " INFORME DE LA ESCUELA";
+const appHeader = " INFORME DE LA ESCUELA";
 
-console.log(titlle + " \n\n  Cursos");
+console.log(appHeader + " \n\n  Cursos:");
 
 const courseNames = [
   "Gestión sostenible de recursos",
