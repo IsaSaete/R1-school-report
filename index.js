@@ -13,7 +13,7 @@ const courseDuration1 = "12 horas";
 const courseDuration2 = "40 horas";
 const courseDuration3 = "80 horas";
 
-const course1 =
+const courseData1 =
   "  - " +
   courseName1 +
   " (" +
@@ -22,7 +22,7 @@ const course1 =
   courseDuration1 +
   ")" +
   "\n";
-const course2 =
+const courseData2 =
   "  - " +
   courseName2 +
   " (" +
@@ -31,7 +31,7 @@ const course2 =
   courseDuration2 +
   ")" +
   "\n";
-const course3 =
+const courseData3 =
   "  - " +
   courseName3 +
   " (" +
@@ -41,7 +41,8 @@ const course3 =
   ")" +
   "\n";
 
-const coursesList = "\n  Cursos:" + "\n" + course1 + course2 + course3;
+const coursesList =
+  "\n  Cursos:" + "\n" + courseData1 + courseData2 + courseData3;
 
 //Datos de los alumnos
 const studentName1 = "María";
@@ -53,7 +54,7 @@ const studentLastName2 = "Sánchez";
 const studentAge1 = 24;
 const studentAge2 = 32;
 
-const student1 =
+const studentData1 =
   "  - " +
   studentName1 +
   " " +
@@ -61,7 +62,7 @@ const student1 =
   ", " +
   studentAge1 +
   " años\n";
-const student2 =
+const studentData2 =
   "  - " +
   studentName2 +
   " " +
@@ -70,7 +71,7 @@ const student2 =
   studentAge2 +
   " años\n";
 
-const studentsList = "\n  Alumnos:" + "\n" + student1 + student2;
+const studentsList = "\n  Alumnos:" + "\n" + studentData1 + studentData2;
 
 //Calcular media de edad
 const averageStudentsAges =
